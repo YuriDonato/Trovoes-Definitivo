@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://PlayerScript.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/PlayerScript.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprite/PlayerTest/testildo.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/PlayerTestFacingDirection_SpriteGD.gd" type="Script" id=3]
 
