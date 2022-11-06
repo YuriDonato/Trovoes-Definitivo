@@ -20,7 +20,12 @@ texture = ExtResource( 2 )
 position = Vector2( 475, 280 )
 
 [node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
-scale = Vector2( -5, -5 )
+current = true
+zoom = Vector2( 0.5, 0.5 )
+limit_left = 92
+limit_top = 37
+limit_right = 910
+limit_bottom = 560
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( 640, 531.5 )
