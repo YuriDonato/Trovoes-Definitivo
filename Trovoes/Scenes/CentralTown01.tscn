@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Mapas/Taverna/bar3.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 17.5, 245.875 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 18.5, 234 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 501, 294 )
+scale = Vector2( 1.28, 1.28 )
+texture = ExtResource( 2 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 475, 280 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 640, 531.5 )
+rotation = 1.5708
+
+[node name="Paredes2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -229.5, -245 )
+rotation = -1.5708
+shape = SubResource( 1 )
+
+[node name="Paredes3" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="Paredes4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -477.5, 83 )
+shape = SubResource( 1 )
+
+[node name="Paredes7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 17.5, 264 )
+shape = SubResource( 1 )
+
+[node name="Paredes6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1.5, 542 )
+shape = SubResource( 1 )
+
+[node name="Paredes5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -462.5, -135 )
+shape = SubResource( 1 )
+
+[node name="Paredes8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -462.5, 413 )
+shape = SubResource( 1 )
+
+[node name="Paredes" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -226.5, 536 )
+rotation = -1.5708
+shape = SubResource( 1 )
